@@ -1,0 +1,68 @@
+<%- include('includes/head.ejs') %>
+<link rel="stylesheet" href="/css/textarea.css" />
+<style>
+    textarea.autosize { min-height: 50px; }
+    </style>
+    
+</head>
+
+
+
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+			</header>
+
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+
+				<!-- One -->
+					<section id="one" class="wrapper style1">
+
+						<div class="image fit flush">
+							<!-- <img src="/images/help.jpg" alt="" /> -->
+						</div>
+						<header class="special">
+							<h2> <a href='/'>세줄요약좀</a> </h2>
+							<p>김지수 문승현 양정열 유승수 윤형준 정현우</p>
+						</header>
+
+						<div id="result-wrapper" >
+                                <!-- <textarea type='text' placeholder="<%= userInput %> " id="result-text" name="userInput" rows="8" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea>   -->
+                                <h3 style="text-align: center;">원래 문장</h3>
+                                <h4 style="border: 1px solid; border-radius: 10px; padding: 8px;"><%= userInput %></h4>
+                                <script>
+                                    function resize(obj) {
+                                      obj.style.height = "1px";
+                                      obj.style.height = (12+obj.scrollHeight)+"px";
+                                    }
+                                    </script>
+                        </div>
+						<div id="wrapper" >
+                            <h3 style="text-align: center;">세줄요약</h3>
+                                <div id="text">
+                                <% if (summary.length > 0)  { %>
+                                    <% for (var i = 0; i < summary.length; i++) { %>
+                                <h4><%= summary[i] %> </h4>
+                                <% } %> 
+                                <% } %> 
+                            </div>
+						</div>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					&copy; Untitled. All rights reserved <a href="https://unsplash.com">Unsplash</a>  <a href="https://templated.co">TEMPLATED</a>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/jquery.poptrox.min.js"></script>
+			<script src="/js/skel.min.js"></script>
+			<script src="/js/util.js"></script>
+			<script src="/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<%- include('includes/head.ejs') %>
+<link rel="stylesheet" href="/css/textarea.css" />
+</head>
+
+
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<!-- <div class="logo dokdo"><a href="/">세 줄 요약 해주세요</a> <span>ver1.0</span></div> -->
+			</header>
+
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+
+				<!-- One -->
+					<section id="one" class="wrapper style1">
+						
+						<header class="special">
+							<h2> <a href='/'>세줄요약좀</a> </h2>
+							<p>김지수 문승현 양정열 유승수 윤형준 정현우</p>
+						</header>
+						<div class="image fit flush">
+							<img src="/images/help.jpg" alt="" />
+						</div>
+
+						<div id="wrapper" >
+
+							<form id="paper" method="POST" action="/get-user-input">
+								<div id="margin"> .</div>
+								<textarea type='text' placeholder="무엇을 요약해드릴까요?" id="text" name="userInput" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea>  
+								<input id="button" type="submit" value="요약시작">
+							</form>
+						</div>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					&copy; Untitled. All rights reserved <a href="https://unsplash.com">Unsplash</a>  <a href="https://templated.co">TEMPLATED</a>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/jquery.poptrox.min.js"></script>
+			<script src="/js/skel.min.js"></script>
+			<script src="/js/util.js"></script>
+			<script src="/js/main.js"></script>
+
+	</body>
+</html>
