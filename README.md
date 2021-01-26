@@ -2,6 +2,7 @@ README created
 
 2020-2 YBIGTA conference
 
+- KoBERT를 활용한 Extractive summarizer
 Deep Learning Text Summarization
 
 # 2020-11-24 Progress
